@@ -171,6 +171,7 @@ nav{
 
 .a,.b,.c{
     max-width:1200px;
+    height: 100vh;
     margin:80px auto;
     padding:20px;
     background:#1b1913;
@@ -191,8 +192,8 @@ nav{
 .a-right img,
 .b-right img,
 .c-right img{
-    width:100%;
-    height:100%;
+    width:100vh;
+    height:90vh;
     object-fit:cover;
     border-radius:4px;
 }
@@ -212,6 +213,7 @@ a{
     text-decoration:none;
     font-size:14px;
 }
+
 
 
 /* ===========================================section-5============================================ */
@@ -254,8 +256,8 @@ a{
     grid-template-rows: 2fr;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    margin-left:4.75rem;
-    margin-right: 4.75rem;
+    margin-left:6%;
+    margin-right: 6%;
     
 }
 
@@ -298,7 +300,7 @@ a{
 }
 
 .sec-6 h2{
-    margin-left: 110px;
+    margin-left: 8%;
     margin-top: 150px;
     font-weight: 500;
     font-size: 24px;
