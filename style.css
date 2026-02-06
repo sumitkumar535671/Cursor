@@ -18,12 +18,26 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color:#14120b;
-    width: 100%;
+    
     height: 52px;
-    padding-inline: 20px;
+    padding:0 20px;
     position: sticky;
     top: 0px;
-    box-sizing: border-box;
+    z-index: 100;
+}
+
+.nav{
+    display:flex;
+    align-items:center;
+    gap:10px;
+}
+
+.nav-icon{
+    gap:8px;
+}
+
+.icon1 img{
+    height:30px;
 }
 
 .icon2 h1{
@@ -33,9 +47,6 @@ nav{
     font-weight: 500;
 }
 
-.icon1 img{
-    height: 30px;
-}
 
 .nav-icon{
     display: flex;
@@ -76,17 +87,16 @@ nav{
 }
 
 .container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    justify-content: center;
-    width: 100%;
-    margin: 40px auto;
+    max-width:1200px;
+    margin:60px auto;
+    padding:0 20px;
+    display:flex;
+    flex-direction:column;
+    gap:40px;
 }
 
 .main-left{
     margin-top: 60px;
-    margin-left: 96px;
     width: 100%;
     font-weight: 400;
 }
@@ -111,14 +121,17 @@ nav{
 }
 
 .photo{
-    max-width: 1180px;
-    margin: 60px auto;
+    width:100%;
 }
 
 .photo img{
-    max-width: 100%;
-    height: auto;
-    border-radius: 4px;
+    width:100%;
+    max-width:1180px;
+    height:auto;
+    display:block;
+    margin:auto;
+    margin-top: 20px;
+    border-radius:4px;
 }
 
 .sec-1-cont h2{
@@ -132,168 +145,72 @@ nav{
 }
 
 .s1d-div{
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-    gap: 2px;
-    margin-left: 100px;
-    margin-right: 108px;
-}
-.s1d-div div{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap:10px;
+    max-width:1200px;
+    margin:auto;
+    padding:0 20px;
 }
 
 .sm-card{
+    background:#1b1913;
     border:2px solid #1b1913;
-    border-radius: 4px;
-    background-color: #1b1913;
-    width: 140px;
-    height: 80px;
+    border-radius:4px;
+    height:80px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
 }
+
 .sm-card img{
     height: 35px;
     width: 100%;
-    color: transparent;
+    object-fit: contain;
 }
 
-.a{
-    background-color: #1b1913;
-    height: 600px;
-    width: 86%;
-    margin: 10px auto;
-    margin-top: 80px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
+.a,.b,.c{
+    max-width:1200px;
+    margin:80px auto;
+    padding:20px;
+    background:#1b1913;
+    border-radius:4px;
+    display:flex;
+    gap:30px;
+    align-items:center;
 }
 
-.a-left{
-    width: 38%;
-    padding-left: 20px;
+.a-left,.b-left,.c-left{
+    flex:1;
 }
 
-.a-left h2{
-    color:#CCCCCC;
-    font-size: 18px;
-    font-weight: 500;
+.a-right,.b-right,.c-right{
+    flex:1;
+}
+
+.a-right img,
+.b-right img,
+.c-right img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    border-radius:4px;
+}
+
+h2{
+    color:#ccc;
+    font-size:18px;
+    font-weight:500;
 }
 
 .op{
-    opacity: 0.6;
+    opacity:.6;
 }
 
-.a-left a{
-    color: #f54e00;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.a-right{
-    width: 62%;
-    margin: 20px;
-}
-
-.a-right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.sec-2 div p{
-    color: #fff;
-}
-/* ==================================section-3================================= */
-
-.b{
-    background-color: #1b1913;
-    height: 600px;
-    width: 86%;
-    margin: 10px auto;
-    margin-top: 80px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.b-left{
-    width: 38%;
-    padding-left: 20px;
-}
-
-.b-left h2{
-    color:#CCCCCC;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.b-left a{
-    color: #f54e00;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.b-right{
-    width: 62%;
-    margin: 20px;
-}
-
-.b-right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.sec-3 div p{
-    color: #fff;
-}
-
-/* =========================================section-4============================ */
-.c{
-    background-color: #1b1913;
-    height: 600px;
-    width: 86%;
-    margin: 10px auto;
-    margin-top: 80px;
-    border-radius: 4px;
-    display: flex;
-    align-items: center;
-}
-
-.c-left{
-    width: 38%;
-    padding-left: 20px;
-}
-
-.c-left h2{
-    color:#CCCCCC;
-    font-size: 18px;
-    font-weight: 500;
-}
-
-.c-left a{
-    color: #f54e00;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.c-right{
-    width: 62%;
-    margin: 20px;
-}
-
-.c-right img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 4px;
-}
-
-.sec-4 div p{
-    color: #fff;
+a{
+    color:#f54e00;
+    text-decoration:none;
+    font-size:14px;
 }
 
 
@@ -339,7 +256,6 @@ nav{
     gap: 10px;
     margin-left: 80px;
     margin-right: 80px;
-
 }
 
 .sec-5-cont h2{
@@ -355,53 +271,36 @@ nav{
 /* =====================================section-6============================= */
 
 .h{
-    background-color:#1b1913;
-    height: 460px;
-    width: 400px;
-    border: 1px solid #1b1913;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    border-radius: 4px;
+    background:#1b1913;
+    border-radius:4px;
+    padding:16px;
+    display:flex;
+    flex-direction:column;
+    gap:16px;
 
 }
 
 .h div img{
-    height: 300px;
-    margin-top: 10px;
-    padding: 10px;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 14px;
-}
-
-.h div h3 , a{
-    margin-left: 10px;
-    font-size: 14px;
-    font-weight: 800;
-}
-
-.h div a {
-    padding-top: 40px;
-    text-decoration: none;
-    color: #f54e00;
+    width:100%;
+    height:260px;
+    object-fit:cover;
+    border-radius:4px;
 }
 
 .g{
-    display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: repeat(3,1fr);
-    width: 80%;
-    margin-left: 80px;
-    gap: 10px;
-    margin-top: 20px;
-    margin-bottom: 80px;
+    max-width:1200px;
+    margin:40px auto;
+    padding:0 20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
 }
 
 .sec-6 h2{
-    margin-left: 80px;
+    margin-left: 110px;
     margin-top: 150px;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 24px;
 }
 
 
