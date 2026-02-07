@@ -170,7 +170,7 @@ nav{
 }
 
 .a,.b,.c{
-    max-width:1200px;
+    max-width:80vw;
     height: 100vh;
     margin:80px auto;
     padding:20px;
@@ -219,15 +219,14 @@ a{
 /* ===========================================section-5============================================ */
 
 .d{
-    width: 400px;
-    height: 220px;
-    border: 1px solid #1b1913;
-    padding: 12px;
+    height: 278px;
+    width: 426px;
+    background-color: #1b1913;
+    padding: 18px;
+    border-radius: 4px;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    background-color:#1b1913;
-    border-radius: 4px;
+    justify-content: space-around;
 }
 
 .d img{
@@ -253,11 +252,10 @@ a{
 
 .f{
     display: grid;
-    grid-template-rows: 2fr;
+    grid-template-rows: repeat(2, 1fr);
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
-    margin-left:6%;
-    margin-right: 6%;
+    margin: 40px;
     
 }
 
@@ -342,9 +340,9 @@ a{
 
 #a{
     display: grid;
-    grid-template-rows: 1;
-    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 1fr;
     gap: 8px;
+    grid-template-columns: repeat(4,1fr);
     margin-bottom: 24px;
 }
 
